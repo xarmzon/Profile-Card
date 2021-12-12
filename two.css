@@ -1,0 +1,160 @@
+:root {
+  --green-color: rgb(7, 187, 97);
+  --green-color-light: rgb(199, 249, 224);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  color: rgb(87, 87, 88);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(background.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.card {
+  width: 40rem;
+  min-height: 40rem;
+  background-color: whitesmoke;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0.7rem;
+  padding: 2rem;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__top span:first-of-type {
+  padding: 0.7rem 1.4rem;
+  background-color: var(--green-color-light);
+  color: var(--green-color);
+  border-radius: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.header__top span:last-of-type {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.card__image {
+  display: flex;
+  justify-content: center;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  border: 0.2rem solid var(--green-color-light);
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
+  margin: auto;
+  overflow: hidden;
+}
+.card__image img {
+  transition: all 1s;
+}
+
+.card__image:hover img {
+  transform: scale(1.2) rotate(360deg);
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.name {
+  text-align: center;
+}
+
+.name p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+  color: rgb(102, 103, 104);
+}
+
+.name span {
+  color: rgba(145, 144, 145, 0.933);
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.job_type {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--green-color);
+  margin: 1.2rem 0;
+  margin-top: 0.5rem;
+  font-size: 1.7rem;
+}
+.btn {
+  margin: 1rem 0;
+}
+button {
+  border-radius: 2rem;
+  padding: 0.7rem 1.4rem;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:not(button:last-of-type) {
+  margin-right: 0.6rem;
+  border: 1px solid rgb(179, 177, 177);
+  color: rgb(61, 60, 60);
+}
+
+button:last-of-type {
+  color: var(--green-color);
+  background-color: var(--green-color-light);
+}
+
+.about {
+  margin: 1.7rem 0 0;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  width: 90%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  background-color: rgb(194, 191, 191);
+  outline: none;
+  border: none;
+  height: 0.1rem;
+  width: 12rem;
+  margin: 1.3rem 0;
+}
+
+.footer a {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(70, 69, 69);
+}

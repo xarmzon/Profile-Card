@@ -1,0 +1,159 @@
+:root{
+    --primary-color: #990c2b;
+    --white: #fcdee5;
+}
+
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: url("images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.card{
+    width: 35rem;
+    background-color: var(--primary-color);
+    border-radius: .5rem;
+    box-shadow: 1px 1px 5px rgba(8, 0, 0, 0.4);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.8rem 2.5rem;
+}
+header img{
+    width: 1.8rem;
+    cursor: pointer;
+    transition: transform .7s ease-in-out;
+}
+
+header img:hover{
+    transform: rotate(360deg);
+}
+
+.card__body{
+    padding: 1rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__body img{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: .3rem solid var(--white);
+    margin-bottom: 0.8rem;
+}
+
+
+.card__social img{
+    transition: transform .5s ease-in-out;
+}
+
+.card__social img:hover{
+    transform: scale(1.5) rotate(-20deg);
+}
+
+.card__body .name{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--white);
+}
+
+.card__body .name p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card__body .name span{
+    font-size: 1.2rem;
+}
+
+.card__social{
+    display: flex;
+    justify-content: center;
+}
+.card__social img{
+    width: 1.8rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+.card__social img:not(.card__social img:last-of-type){
+    margin-right: 1rem;
+}
+
+.footer{
+    margin-top: 1.2rem;
+    background-color: whitesmoke;
+    min-height: 12rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    position:relative;
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .follow{
+    position: absolute;
+    top: -1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding: 0.6rem 2.8rem;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.2rem 1rem var(--primary-color);
+}
+
+.footer .follow p{
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+
+
+.footer .content{
+    margin-top: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0 1rem;
+    padding-bottom: 0.3rem;
+}
+.footer .content p{
+    font-size: 1.3rem;
+    color:rgb(196, 194, 194);
+}
+.footer .content img{
+    margin-top: 1.1rem;
+    width: 2rem;
+    transition: margin-top .3s;
+    cursor: pointer;
+    animation: bounce 1.2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    to{
+        transform: translateY(5px);
+    }
+}
